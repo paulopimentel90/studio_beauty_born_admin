@@ -1,0 +1,5 @@
+{
+  "imports": {
+    "bcrypt": "https://deno.land/x/bcrypt/mod.ts"
+  }
+}
