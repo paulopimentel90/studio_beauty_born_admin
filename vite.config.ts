@@ -5,6 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 import path from "node:path";
 
 export default defineConfig({
+
   base: "/studio_beauty_born_admin/",
 
   plugins: [
@@ -17,4 +18,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+
 });
