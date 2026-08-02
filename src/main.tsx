@@ -5,15 +5,7 @@ import {
   HashRouter,
 } from "react-router-dom";
 
-import {
-  QueryClientProvider,
-} from "@tanstack/react-query";
-
 import App from "./App";
-
-import {
-  queryClient,
-} from "@/lib/query-client";
 
 import "./index.css";
 
@@ -26,15 +18,11 @@ ReactDOM
 
     <React.StrictMode>
 
-      <QueryClientProvider client={queryClient}>
+      <HashRouter>
 
-        <HashRouter>
+        <App />
 
-          <App />
-
-        </HashRouter>
-
-      </QueryClientProvider>
+      </HashRouter>
 
     </React.StrictMode>
 
