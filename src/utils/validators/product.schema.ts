@@ -18,13 +18,13 @@ export const productSchema = z.object({
 
   price: z
     .number({
-      error: "Informe um preço válido.",
+      invalid_type_error: "Informe um preço válido.",
     })
     .min(0.01, "O preço deve ser maior que zero."),
 
   quantity: z
     .number({
-      error: "Informe uma quantidade válida.",
+      invalid_type_error: "Informe uma quantidade válida.",
     })
     .min(0, "A quantidade não pode ser negativa."),
 
